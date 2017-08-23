@@ -20,14 +20,4 @@ fun main(args : Array<String>) {
         }
         msgCount += readCount
     }
-
-
-    fun doit(x : String, y : Int) : Boolean {
-        println("Doit $x $y")
-        return true
-    }
-
-    val x2= SamInterface( ::doit )
-    x2.handle("foo", 42)
-
 }
