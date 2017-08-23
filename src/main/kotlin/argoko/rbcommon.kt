@@ -10,6 +10,4 @@ object RbCommon {
     val cncByteBuffer = IoUtil.mapNewFile(File("/tmp/andy.dat"), 2048L + TRAILER_LENGTH)
     val buf = UnsafeBuffer(cncByteBuffer)
     val ringBuffer = OneToOneRingBuffer(buf)
-    //val bb = ByteBuffer()
-    //x.write(t
 }
