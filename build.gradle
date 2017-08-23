@@ -11,6 +11,7 @@ buildscript {
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.1'
+        classpath 'org.agrona:Agrona:0.9.1'
     }
 }
 
@@ -29,6 +30,8 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.agrona/Agrona
+    compile group: 'org.agrona', name: 'Agrona', version: '0.9.1'
 }
 
 compileKotlin {
