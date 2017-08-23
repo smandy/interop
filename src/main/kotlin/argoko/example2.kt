@@ -1,3 +1,5 @@
+package argoko
+
 import javax.swing.SwingUtilities
 
 sealed class Socket
@@ -34,8 +36,8 @@ fun balance() = try {
 }
 
 fun acceptSocket( s : Socket) = when (s) {
-    is Disconnected -> println("Disconnected")
-    is Connected -> println("Connected ${s.x}")
+    is Disconnected -> println("argoko.Disconnected")
+    is Connected -> println("argoko.Connected ${s.x}")
 }
 
 fun String.double( ) : String {

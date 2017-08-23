@@ -1,3 +1,5 @@
+package argoko
+
 class RateTimer {
 
     var lastMsgs = 0L;
